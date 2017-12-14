@@ -18,108 +18,64 @@
   </head>
  
   <body>
-    <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/cptcrunchy" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>cptcrunchy</em>
-            </a>
-          </li>
-          <li class="linkedin">
-            <a rel="external" href="https://www.linkedin.com/in/jgutierrez84" title="LinkedIn">
-              <svg class="fa-linkedin">
-                <use xlink:href="#fa-linkedin"></use>
-              </svg>
-              <em>jgutierrez84</em>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    
     <main role="main">
       <article id="webslides" class="vertical">
   
         <!-- SLIDE 1 -->
-        <section class="slide-bottom">
-         <span class="background" style="background-image:url('./static/images/intro_bg.jpg')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="slide-top content-center">
-            <h1><strong>An Intro to:</strong></h1>
-            <p class="text-intro">A lunch time talk with Jason Gutierrez. </p>
-          </div>
-          <!-- .end .wrap -->
+        <section class="slide-top">
+         <span class="background" style="background-image:url('./static/images/intro_bg.jpg')"></span> 
         </section>
+
+
+
+
         <!-- SLIDE 2 -->
-        <section class="bg-gradient-r">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <h2><strong>What is SASS?</strong></h2>
-            <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>SASS or SCSS</h2>
-                  <p>SCSS and Sass are preprocessing languages which are compiled to CSS, in that they make writing code easier, and provide quite a bit of leverage in doing so. Individually SCSS and Sass come from the same origin however they are technically different syntaxes.</p>
-                </li>
-                <li>
-                  <h2>What's a Preprocessor?</h2>
-                  <p>A preprocessor is a program that takes one type of data and converts (compiles) it to another type of data.</p>
-                  <p>HTML has many (Haml, JSP, Pug...) </p>
-                </li>
-              </ul>
+        <section class="bg-blue">
+            <div class="wrap size-50 bg-white">
+              <h2>
+                <svg class="fa-info-circle large">
+                  <use xlink:href="#fa-info-circle"></use>
+                </svg>
+                <strong>A bit of context</strong>
+              </h2>
+              <hr>
+              <p>This talk is in no way shape or form going to make you a cryptocurrency expert. This is 
+                an evolving introduction to blockchain technology and cryptocurrency. All "Constructive"
+                input will be taken under advisement and possibly integrated into a future presentation.
+              </p>
             </div>
-            <!-- .end .bg-white shadow -->
+            <!-- .end .wrap -->
+          </section>
+        
+        
+        <section class="bg-blue">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 bg-white">
+            <h3><strong>What is Blockchain Technology?</strong></h3>
+            <h3 class="text-intro"><strong>Most simplest explanation</strong></h3>
+            <p>
+              Blockchain technology is a continuously growing list of records, called blocks, which are linked and secured using cryptography. Each block contains varying amounts of data or transactions, with each block size limited as agreed upon by the altcoin peer network. Blockchain relies upon the use of Merkle Trees or Hash trees.</p>  
           </div>
           <!-- .end .wrap -->
         </section>
 
         <!-- SLIDE 3 -->
-        <section class="bg-gradient-r">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="vertical-align">
-              <div class="content-center">
-                <h3><strong>SASS or SCSS.<br> Whats the Difference??</strong></h3>
-              </div>
-              <!-- .end .column -->
-            <div class="grid">
-              <div class="column">
-                  <h4>SASS</h4>
-                  <p>SASS came before SASS and is <strong>strict indented syntax</strong></p>
-                  <p>Space/Indent specific. No semi-colons!</p>
-<pre class="bg-blue">
-.content {
-  background-color: white
-  padding: 15px
-  height: 50px
-  width: 50px
-}
-</pre>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                  <h4>SCSS</h4>
-                  <p>SCSS followed shortly after but is not strict indented syntax.</p>
-                  <p>Closer related to CSS. Defacto processor.</p>
-<pre class="bg-inverse">
-.content {
-  background-color: white;
-  padding: 15px;
-  height: 50px; width: 50px;
-}
-</pre>
-              </div>
-              <!-- .end .column -->
+        <section class="bg-blue">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 bg-white">
+              <h3><strong>History of Blockchain Technology (BCT)</strong></h3>
+              <p>
+                  BCT has been around since 1991 used by cryptographers to timestamp documents and 
+                  protect against forgery. <a href="https://link.springer.com/article/10.1007/BF00196791">HERE</a>
+              </p>  
+              <p>
+                The "First" widely known distributed blockchain was created by "Satoshi Nakamoto" in 2008.
+                Some believe that it arised as a result of the 2008 housing market crash.
+              </p>
             </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
+            <!-- .end .wrap -->
+          </section>
 
         <!-- SLIDE 4 -->
         <section class="bg-gradient-r">
