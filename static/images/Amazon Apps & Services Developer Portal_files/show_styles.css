@@ -1,0 +1,127 @@
+#EDW_APP_ROOT .edw-render-simulator {
+    box-sizing: border-box;
+    width: 801px;
+    padding: 16px 0 0 0;
+}
+
+#EDW_APP_ROOT .edw-render-simulator .CodeMirror {
+    width: 801px;
+    height: 470px;
+    margin: 8px 0 0;
+}
+
+#EDW_APP_ROOT .edw-render-simulator .NoCode {
+    line-height: 469px !important;
+}
+
+.renderingContainer {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    cursor: default;
+    height: 469px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.renderingContainer div {
+    position: relative;
+}
+
+.renderingContainer span {
+    display: inline-block;
+}
+
+.renderingContainer.FluidBackground .background, .renderingContainer .FluidBackground .background, .colorBackground {
+    background-image: url('https://d37f1yd1zv9gkq.cloudfront.net/images/background.jpg') !important;
+    background-size: 100% 100% !important;
+}
+
+.renderingContainer .colorPrimary {
+    color: #151920;
+}
+
+.renderingContainer .colorDisabled {
+    color: #62666D; 
+}
+
+.renderingContainer .colorAccent {
+    color: #0070BA;
+}
+
+.renderingContainer .colorError {
+    color: #D60D2B;
+}
+
+.renderingContainer .colorBlack {
+    color: #000000;
+}
+
+.renderingContainer .colorWhite {
+    color: #FFFFFF;
+}
+
+.renderingContainer .Template_Fluid_Speech_Header_Container {
+    padding-right: 72px;
+}
+
+.renderingContainer .Template_Fluid_Speech_Header_Container .f_icon {
+    margin-right: 72px !important; 
+}
+
+.renderingContainer .Template_Fluid_Speech_Header_NavigationButton {
+
+}
+
+.renderingContainer .f_icon {
+
+}
+
+.renderingContainer .FluidBackground, .renderingContainer.FluidBackground {
+    color: white !important;
+}
+
+.renderingContainer .f_ordinal {
+
+}
+
+.renderingContainer .FluidBackground .TextAppearance_Fluid_Speech_ListItem_Ordinal_Far {
+    color: white;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.renderingContainer .TextAppearance_Fluid_Speech_ListItem_Ordinal_Far {
+    min-width: 15px;
+    padding: 14px;
+    width: auto !important;
+    height: auto !important;
+    font-family: amazon-ember-bold;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 43px;
+    color: black;
+    background: #F0F1EF;
+}
+
+.renderingContainer .Template_Fluid_Speech_Hint_Text {
+    font-family: bookerly-regular-italic;
+}
+
+.renderingContainer .TextAppearance_Fluid_Speech_Details1 {
+    font-size: 18px !important;
+}
+
+.renderingContainer .TextAppearance_Fluid_Speech_Secondary2 {
+    
+}
+
+.renderingContainer .f_tertiary_text .TextAppearance_Fluid_Speech_Subtitle1 {
+    font-size: 33px !important;
+}
+
+.renderingContainer .TextAppearance_Fluid_Speech_Body1 {
+    font-size: 57px !important;
+}

@@ -1,0 +1,57 @@
+table.dt th.sortable  a {
+    background: url("https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/sprite-sorting.png") no-repeat scroll 0 0 transparent;
+    background-position: 0 0px;
+    padding-left:12px;
+}
+
+/* keeping this just in case its needed in the future. */
+table.dt th:first-child, table.dt th:first-child a {
+}
+
+table.dt th.order1 a {
+    background: url("https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/sprite-sorting.png") no-repeat scroll 0 0 transparent;
+    background-position: 0 -60px;
+}
+
+table.dt th.order2 a {
+    background: url("https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/sprite-sorting.png") no-repeat scroll 0 0 transparent;
+    background-position: 0 -20px;
+}
+
+/* banner css, embedded into the navigation */
+.dtbanner {
+    font-weight: bold;
+}
+
+.dtbanner p {
+    color: #999999;
+    float: left;
+    font-size: 11px;
+    padding: 11px;
+    padding-right: 0px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    background: #F4F4F4;
+    border-bottom:  1px solid #e9e9e9;
+}
+/* end of banner css */
+
+/* apply on the current page pointer */
+.pagination ul li strong {
+    background: none repeat scroll 0 0 #C2D1D8;
+    border-color: #C2D1D8 !important;
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+    
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+div.subheadLinks {
+    padding: 20px;
+}
+
+div.subheadLinks a {
+    text-decoration: underline;	
+}
