@@ -77,82 +77,51 @@
             <!-- .end .wrap -->
           </section>
 
-        <!-- SLIDE 4 -->
-        <section class="bg-gradient-r">
-          <div class="wrap">
-            <div class="aligncenter">
-              <h2 class="aligncenter">How to install?</h2>
-              <p class="aligncenter">
-                <a href="http://sass-lang.com/install" target="_blank"class="button" title="Download WebSlides">
-                  <svg class="fa-cloud-download">
-                    <use xlink:href="#fa-cloud-download"></use>
-                  </svg>
-                  Get SASS
-                </a>
-              </p>
-            </div>
-            <div class="content-center">
-<pre class="bg-blue">
-// Check if you have it installed already
-// Open a terminal and enter:
-sudo install gem sass
-
-// Double-check. You should now have Sass installed, but it never hurts to double-check.
-sass -v
-
-// Should return
-Sass 3.5.1
-</pre>              
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE 5 -->
-        <section class="bg-gradient-r">
-            <div class="wrap">
-              <div class="aligncenter">
-                <h2><strong>How to use SASS</strong></h2>
-                <p>Use manual process or <span class="text-serif bg-blue">Automagically</span> process (Watcher).</p>
-              </div>
-              <div class="grid">
-                <div class="column">
-                  <h2>Manually process</h2>
-  <pre class="bg-blue">
-  // In your Terminal:
-  
-  touch input.scss
-  
-  sass input.scss output.css
-  
-  // files will be processed in your current working directory unless specified
-  </pre>
-                </div>
-                <div class="column">
-                  <h2>Automagically process</h2>
-  <pre class="bg-blue">
-  // In your Terminal:
-  
-  mkdir scss
-  
-  sass --watch scss:css
-  
-  // Any scss file created in the scss directory will be compiled to css
-  </pre>
-                </div>
-              </div>
+          <section class="bg-blue">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 bg-white">
+              <h3><strong>Basic Blockchain Terminology</strong></h3>
+              <ul class="description">
+                <li>
+                  <strong class="text-label">Hash</strong>
+                  Each Block is Hashed with a SHA256 encryption
+                </li>
+                <li>
+                  <strong class="text-label">Nonce</strong>
+                  In cryptography a nonce is an arbitrary number that can only be used once.
+                  It is often a random or pseudo-random number which cannot be reused in replay attacks.
+                </li>
+                <li>
+                  <strong class="text-label">Proof of Work (POW)</strong>
+                  POW is an economic measure to deter DDoS attacks and other service abuses such as spam
+                  on a network by requiring some work from the service requester, usually meaning processing time by a computer.
+                  This idea is also known as a CPU cost function.
+                </li>
+                <li>
+                  <strong class="text-label">Proof of Stake (POS)</strong>
+                  POS states that a person can mine or validate block transactions according to how many coins he or she holds.
+                  This means that the more Bitcoin or altcoin owned by a miner, the more mining power he or she has.
+                </li>
+              </ul>
             </div>
             <!-- .end .wrap -->
           </section>
-        
-        <!-- SLIDE 6 -->
-        <section class="bg-gradient-r">
-          <div class="aligncenter">
-            <h2><strong>Terminology</strong></h2>
-          </div>
-        </section>
+
+          <section class="bg-blue">
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap size-50 bg-white">
+                <div class="text-landing content-center">
+
+                  <h3><strong>Basic Demo of BlockChain</strong></h3>
+                </div>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+
+      
 
         <!-- SLIDE 7 -->
-        <section class="bg-gradient-r">
+        <!-- <section class="bg-gradient-r">
           <div class="wrap">
               <div class="card-50 bg-white">
                   <div class="flex-content">
@@ -168,7 +137,7 @@ Sass 3.5.1
                       <li><strong class="text-label">Inheritence:</strong>Refers to @mixin, @extend, @include</li>
                     </ul>
                   </div>
-                  <!-- end .flex-content-->
+                  <!- - end .flex-content- ->
                   <figure>
                     <pre>
 // Variables
@@ -195,518 +164,14 @@ opacify()
 
    </pre>
                   </figure>
-                  <!-- end figure-->
+                  <!- - end figure- ->
                 </div>
-                <!-- .end .card-50 -->
+                <!- - .end .card-50 - ->
           </div>
-        </section>
+        </section> -->
 
-        <!-- SLIDE 8 -->
-        <section class="bg-gradient-r">
-          <div class="aligncenter">
-            <h2><strong>Variables</strong></h2>
 
-          </div>
-        </section>
-
-        <!-- SLIDE 8 -->
-        <section class="bg-gradient-r">
-            <div class="wrap">
-             <div class="card-50 bg-white">
-               <div class="flex-content">
-                 <h2>Variables</h2>
-                 <p>Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable.
-                 </p>
-                 <ul class="description">
-                   <li>
-                     <strong class="text-label">Pro 1:</strong>Makes your style more expressive
-                   </li>
-                   <li><strong class="text-label">Pro 2:</strong>Change the value of a variable, changes all related</li>
-                   <li><strong class="text-label">Pro 3:</strong>Allows you to perform functions</li>
-                 </ul>
-               </div>
-               <!-- end .flex-content-->
-               <figure>
-                 <pre>
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-$secondary-color: #0ff;
-$ternary-color: #f0f;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
-
-h1 {
-  color: ($secondary-color + $ternary-color);
-}
-
-a {
-  text-decoration: none;
-  color: $primary-color;
-  &amp;:hover {
-    color: darken($primary-color, 10%);
-  }
-}
-</pre>
-               </figure>
-               <!-- end figure-->
-             </div>
-             <!-- .end .card-50 -->
-            </div>
-             <!-- .end .wrap -->
-           </section>
-        
-        <!-- SLIDE 9 -->
-        <section class="bg-gradient-r">
-          <div class="aligncenter">
-            <h2>NESTING</h2>
-          </div>
-        </section>
-
-        <!-- SLIDE 10 -->
-        <section class="bg-gradient-r">
-            <div class="wrap">
-             <div class="card-50 bg-white">
-               <div class="flex-content">
-                 <h2>Nesting selectors</h2>
-                 <p class="text-intro">SCSS allows you nest your selectors to create more concise groups of elements. 
-                 </p>
-                 <ul class="description">
-                   <li>
-                     <strong class="text-label">Pro 1:</strong>Makes your style more expressive
-                   </li>
-                   <li><strong class="text-label">Pro 2:</strong>Change one name, changes all related</li>
-                   <li><strong class="text-label">Caution</strong>SCSS allows you to deeply nest elements. Avoid Inception!</li>
-                 </ul>
-               </div>
-               <!-- end .flex-content-->
-               <figure>
-                 <pre>
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    background-color: blue;
-    text-decoration: none;
-    &amp;:hover {
-      color: white;
-      background-color: darken(blue, 10%);
-    }
-  }
-}
-                 </pre>
-               </figure>
-               <!-- end figure-->
-             </div>
-             <!-- .end .card-50 -->
-            </div>
-             <!-- .end .wrap -->
-           </section>
-
-           <!-- SLIDE 11 -->
-        <section class="bg-gradient-r">
-          <div class="aligncenter">
-            <h2>Partials</h2>
-          </div>
-        </section>
-
-           <!-- SLIDE 12 -->
-        <section class="bg-gradient-r">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-              <div class="card-50 bg-white">
-                  <div class="flex-content">
-                    <h2>Partials
-                    </h2>
-                    <p>A partial is simply a Sass file named with a leading underscore. You might name it something like <span class="bg-blue">_partial.scss</span>. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file</p>
-                    <ul class="description">
-                      <li><strong class="text-label">Pro 1:</strong>Partials allow for modular code</li>
-                      <li><strong class="text-label">Pro 3:</strong>CSS @import isn't SCSS @import<br>
-                      CSS @import requires an additional HTTP Request.<br> SCSS does not!
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- end .flex-content-->
-                  <figure>
-<pre>
-// _reset.scss
-
-html,
-body,
-ul,
-ol {
-  margin:  0;
-  padding: 0;
-}
-
-// base.scss
-
-@import 'reset';
-
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-}
-
-// Best practice is to save all partials in partials sub-directory
-</pre>
-                  </figure>
-                  <!-- end figure-->
-                </div>
-                <!-- .end .card-50 -->
-           
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-       <!-- SLIDE 13 -->
-       <section class="bg-gradient-r">
-         <div class="wrap">
-           <div class="aligncenter">
-             <h2><strong>Mixins</strong></h2>
-           </div>
-         </div>
-       </section>
-
-       <!-- SLIDE 14 -->
-       <section class="bg-gradient-r">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="card-50 bg-white">
-                <div class="flex-content">
-                  <h2>Mixins</h2>
-                  <p>Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. </p>
-                  <ul class="description">
-                    <li><strong class="text-label">Pro 1:</strong>Mixins allow to resuse your code.</li>
-                    <li><strong class="text-label">Pro 2:</strong>Mixins allow you to pass arguements.</li>
-                  </ul>
-                </div>
-                <!-- end .flex-content-->
-                <figure>
-<pre>
-@mixin button-bg {
-  background: #efefef;
-  &amp;:hover {
-    background: darken(#efefef,8%);
-    transition: all 0.3s ease;
- }
-}
-
-.btn {
-color:white;
-padding:5px 10px;
-border-radius:3px;
-  font: {
-    family: 'Poiret One', cursive;
-    size:2em;
-    weight: 600;
-  }
-}
-
-.btn-green {
-  @include button-bg;
-   background-color: #2ecc71;
-}
-
-.btn-blue {
-  @include button-bg;
-  background-color: #3498db;
-}
-</pre>
-                </figure>
-                <!-- end figure-->
-              </div>
-              <!-- .end .card-50 -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-       <!-- SLIDE 15 -->
-       <section class="bg-gradient-r">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="card-50 bg-white">
-                <div class="flex-content">
-                  <h2>Mixins with Arguements</h2>
-                  <ul class="description">
-                    <li><strong class="text-label">Pro 1:</strong>Mixins allow to resuse your code.</li>
-                    <li><strong class="text-label">Pro 2:</strong>Mixins allow you to pass arguements.</li>
-                  </ul>
-                </div>
-                <!-- end .flex-content-->
-                <figure>
-<pre>
-// _mixin.scss 
-
-@mixin box($radius: 6px, $border: 1px solid #000) {
-  @include rounded($radius);
-  border: $border;
-}
-
-// This mixin is using a Variable Argument (VarArg)
-// Similar to spread operator in Javascript
-@mixin box-shadow($shadows...) {
-  box-shadow: $shadows;
-  -moz-box-shadow: $shadows;
-  -webkit-box-shadow: $shadows;
-}
-
-// main.scss
-#header {
-  @include box($border: 1px solid #fff, $radius: 12px);
-  @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
-  height: $header-height;
-  background-color: $theme-color;
-
-</pre>
-                </figure>
-                <!-- end figure-->
-              </div>
-              <!-- .end .card-50 -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-       <!-- SLIDE 16 -->
-       <section class="bg-gradient-r">
-          <div class="wrap">
-            <div class="aligncenter">
-              <h2><strong>SASS Shell</strong></h2>
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE 17  -->
-        <section class="bg-gradient-r">
-          <div class="wrap">
-              <div class="card-50 bg-white">
-                  <div class="flex-content">
-                    <h2>SASS Shell</h2>
-                    <p>Most people don't know that SASS has a built in shell. This can be used to get a better understanding of how SASS handles arithmetic operators. </p>
-                  </div>
-                  <!-- end .flex-content-->
-                  <figure>
-  <pre>
-// To use the Shell. Open your terminal and enter:
-
-sass -i 
-
-// or
-
-sass --interactive
-
-</pre>
-                  </figure>
-                  <!-- end figure-->
-                </div>
-                <!-- .end .card-50 -->
-          </div>
-        </section>
-
-        <!-- SLIDE 18 -->
-        <section class="bg-gradient-r">
-          <div class="wrapper div aligncenter">
-            <h2><strong>Functions</strong></h2>
-          </div>
-        </section>
-        <!-- SLIDE 19 -->
-        <section class="bg-gradient-r">
-          <div class="wrap">
-              <div class="card-50 bg-white">
-                  <div class="flex-content">
-                    <h2>SASS Built-in Functions</h2>
-                    <p>SASS provides you with many built-in functions. But you can also create your own. </p>
-                    <ul class="description">
-                        <li><strong class="text-label">Built-in 1:</strong>lighten($variable, %percent)</li>
-                        <li><strong class="text-label">Built-in 2:</strong>darken($variable, $percent)</li>
-                        <li><strong class="text-label">Built-in 3:</strong>transparentize()</li>
-                        <li><strong class="text-label">Built-in 4:</strong>opacify()</li>
-                      </ul>
-                  </div>
-                  <!-- end .flex-content-->
-                  <figure>
-            <pre>
-#header {
-  @include box($border: 1px solid #fff, $radius: 12px);
-  @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
-  height: $header-height;
-  background-color: $theme-color;
-
-    a {
-      border-bottom: 1px solid transparentize(#fefefe, 1);
-      transition-timing-function: ease-in-out;
-      transition: border-bottom 0.5s;
-
-      &amp;:hover {
-        border-bottom: 1px solid opacify(#fefefe, 0.5);
-      }
-    }
-  }
-            </pre>
-          </figure>
-          <!-- end figure-->
-        </div>
-        <!-- .end .card-50 -->
-  </div>
-  <!-- .end .wrap -->
-        </section>
-        
-        <!-- SLIDE 20 -->
-        <section class="bg-gradient-r">
-          <div class="wrap">
-            <div class="aligncenter">
-              <h2><strong>Custom Functions</strong></h2>
-            </div>
-          </div>
-        </section>
-
-        <!-- SLIDE 21 -->
-        <section class="bg-gradient-r">
-            <div class="wrap">
-                <div class="card-50 bg-white">
-                    <div class="flex-content">
-                      <h2>SASS Custom Functions <br> &amp; Conditions</h2>
-                      <p>Think Javascript. </p>
-                      <ul>
-                        <li><strong class="text-label"> @If :</strong></li>
-                        <li><strong class="text-label"> @Else :</strong></li>
-                        <li><strong class="text-label"> @Else if :</strong></li>
-                        <li><strong class="text-label"> @Function :</strong></li>
-                        <li><strong class="text-label"> @Return :</strong></li>
-                      </ul>
-                    </div>
-                    <!-- end .flex-content-->
-                    <figure>
-              <pre>
-
-  // Custom functions use a special directive.
-  @function sum($left , $right) {
-    @return $left + $right
-  }
-
-  @function em($px, $context: 16px) {
-    @return ($px / $context) * 1em;
-  }
-
-  @function col-width($columns: 12, $page-width: 100%, $gap: 1%) {
-    @return ($page-width - $gap($columns -1)) / $columns;
-  }
-
-  // Set a specific variable
-  $col: $col-width($columns: 8);
-
-  #content {
-    float: left;
-    width: 6*$col;
-  }
-
-  #sidebar {
-    float: right;
-    width: 2*$col;
-  }
-              </pre>
-            </figure>
-            <!-- end figure-->
-          </div>
-          <!-- .end .card-50 -->
-    </div>
-    <!-- .end .wrap -->
-          </section>
-  
-          <!-- SLIDE 22  -->
-          <section class="bg-gradient-r">
-            <div class="wrap">
-              <div class="aligncenter">
-                <h2><strong>Loops</strong></h2>
-              </div>
-            </div>
-          </section>
-
-          <!-- SLIDE 23 -->
-          <section class="bg-gradient-r">
-              <div class="wrap">
-                  <div class="card-50 bg-white">
-                      <div class="flex-content">
-                        <h2>SASS Custom Functions</h2>
-                        <p>You need to use the special Functions directive along with the Return directive. Think Javascript. </p>
-                        <ul class="description">
-                          <li><strong class="text-label">@For</strong></li>
-                          <li><strong class="text-label">@Each</strong></li>
-                          <li><strong class="text-label">@While</strong></li>
-                        </ul>
-                      </div>
-                      <!-- end .flex-content-->
-                      <figure>
-                <pre>
-// For Loop
-@for $i from 1 through 6 {
-  .col-#{$i} {
-    width: $i * 2em;
-  }
-}
-// ForEach Loop
-$speakers: bobBanker, pattyPlume, sandraSmith;
-@each $speaker in $speakers {
-  .#{$speaker}-profile {
-    background-image: url('/img/#{$speaker}.png');
-  }
-}
-// Using a Map with a ForEach loop
-$font-sizes: (tiny: 8px, small: 11px, medium: 13px, large: 18px);
-@each $name, $size in $font-sizes {
-  .#{$name} {
-    font-size: $size;
-  }
-}
-
-// While loop
-$j: 2;
-@while $j &lt;= 8 {
-  .picture-#{$j} {
-    width: $j * 10%;
-  }
-  $j: $j + 2;
-}                 
-                </pre>
-              </figure>
-              <!-- end figure-->
-            </div>
-            <!-- .end .card-50 -->
-      </div>
-      <!-- .end .wrap -->
-            </section>
-
-       <!-- LAST SLIDE -->
-       <section class="bg-gradient-r">
-          <div class="wrap size-50">
-              <h2>
-                <svg class="fa-heart-o">
-                  <use xlink:href="#fa-heart-o"></use>
-                </svg>
-                SCSS Resources
-              </h2>
-              <p class="text-intro">Helpful Resources for SCSS</p>
-              <hr>
-              <ul class="description">
-                <li><span class="text-label">Sass-Lang:</span><a href="http://sass-lang.com/guide">Sass Guide</a></li>
-                <li><span class="text-label">Sass Way:</span><a href="http://thesassway.com">Sass style guides</a></li>
-                <li><span class="text-label">Bourbon:</span><a href="http://bourbon.io/">A Lightweight Mixin Library</a></li>
-                <li><span class="text-label">Compass:</span><a href="http://compass-style.org/">An Open Source Sass framework</a></li>
-                <li><span class="text-label">Codepen:</span>Community resource for all things style!</li>
-              </ul>
-            </div>
-       </section>
-
+      
       </article>
       <!-- end article -->
     </main>
